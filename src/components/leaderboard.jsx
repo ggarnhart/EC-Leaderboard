@@ -40,7 +40,7 @@ class Leaderboard extends Component {
 
   componentDidMount = () => {
     Tabletop.init({
-      key: "1Q0k21e1wTL3EYt8ZcKvXhUhl206XNabZarWiWC2yN4w",
+      key: "1E-Hxa9pgcvaQXm1oxC13H5TTrgCy8IcZHvXxODIXe9Y",
       callback: googleData => {
         console.log(googleData);
         this.setState({
