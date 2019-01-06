@@ -8,20 +8,32 @@ class Leaderboard extends Component {
   };
   render() {
     return (
-      <div className="container">
-        <div className="row">
-          {this.state.data.map(leader => {
-            return (
-              <div className="col-sm leader">
-                <h2>
-                  {leader.FirstName} {leader.LastName}
-                </h2>
-                <img src={leader.Profile} className="profile" />
-                <h2>{leader.Points}</h2>
-              </div>
-            );
-          })}
-        </div>
+      <div className="container leaderboard">
+        <h1 className="text-center">Leaderboard</h1>
+        <table className="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            {this.state.data.map(leader => {
+              return (
+                <tr>
+                  <td>
+                    <span className="heavy">{leader.FirstName} </span>
+                    <span className="light">{leader.LastName}</span>
+                  </td>
+                  <td>
+                    <span className="heavy">{leader.Points} </span>
+                    <span className="light">Points</span>
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
       </div>
     );
   }
