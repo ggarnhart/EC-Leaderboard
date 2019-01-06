@@ -1,3 +1,4 @@
+# [EC Leaderboard](https://ggarnhart.github.io/EC-Leaderboard)
 # EC Leaderboard
 
 A simple app that displays the current leaderboard for the Alan B. Miller Entrepreneurship Center's Engagement Platform.
